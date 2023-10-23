@@ -229,8 +229,8 @@ export class ProtocolServer {
       const pmtiles_url = result[1];
 // we don't have instance anymore. We need to call the header and tile endpoints
     //
-   let domainName;
-   let pathParams;
+   let domainName : string;
+   let pathParams: string[];
       const controller = new AbortController();
       const signal = controller.signal;
       let cancel = () => {
